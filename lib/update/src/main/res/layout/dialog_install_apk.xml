@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_white_dialog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/update_install_text"
+                android:textColor="@color/black_text"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text=""
+                android:textColor="@color/black_text"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                android:textColor="@drawable/color_black_to_gray"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/update_btn_cancel"
+                android:textAllCaps="false"
+                android:textColor="@drawable/color_black_to_gray"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/update_install_now_text"
+                android:textAllCaps="false"
+                android:textColor="@drawable/color_blue_to_gray"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

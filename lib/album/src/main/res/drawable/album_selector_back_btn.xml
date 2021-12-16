@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/album_ic_return_sel" android:state_pressed="true" />
+    <item android:drawable="@drawable/album_ic_return" />
+
+</selector>

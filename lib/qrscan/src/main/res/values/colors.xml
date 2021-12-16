@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="scanview_frame">#ff000000</color>
+    <color name="scanview_mask">#60000000</color>
+
+    <color name="scanview_corner">#FF1FB3E2</color>
+    <color name="scanview_laser">#FF1FB3E2</color>
+    <color name="scanview_text_color">#FFC0C0C0</color>
+
+</resources>

@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/lib_ic_fh__click" android:state_pressed="true" />
+    <item android:drawable="@drawable/lib_ic_fh_ct" />
+
+</selector>

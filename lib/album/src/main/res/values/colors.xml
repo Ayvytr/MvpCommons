@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="album_black_text">#294058</color>
+    <color name="album_background">#f3f4f6</color>
+    <color name="album_white">#ffffff</color>
+    <color name="album_black">#000000</color>
+
+    <color name="album_action_text_color_normal" >#cfcfcf</color>
+    <color name="album_action_text_color_pressed" >#353535</color>
+    <color name="album_action_text_color_enabled" >#818585</color>
+
+</resources>

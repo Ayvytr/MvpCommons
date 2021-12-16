@@ -1,0 +1,14 @@
+include ':http'
+project(':http').projectDir = new File('./lib/http')
+
+include ':base'
+project(':base').projectDir = new File('./lib/base')
+
+include ':customview'
+project(':customview').projectDir = new File('./lib/customview')
+
+include ':app'
+
+include ':commonlib'
+
+include ':biz-account'

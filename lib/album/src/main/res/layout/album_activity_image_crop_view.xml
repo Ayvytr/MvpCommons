@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/album_layout_my_toolbar" />
+
+
+    <com.wanshare.wscomponent.album.widget.ClipImageView
+        android:id="@+id/image_bit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        app:civClipCircle="false"
+        app:civClipPadding="16dp"
+        app:civClipRoundCorner="5dp"
+        app:civHeight="1"
+        app:civMaskColor="#B2000000"
+        app:civWidth="1" />
+
+
+
+</LinearLayout>

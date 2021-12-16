@@ -1,0 +1,24 @@
+<resources>
+    <string name="update_btn_cancel">取消</string>
+    <string name="update_btn_confirm">确定</string>
+    <string name="update_install_text">安装</string>
+    <string name="update_install_now_text">立即安装</string>
+    <string name="update_network_error">网络错误</string>
+    <string name="update_new_version_tips">新版本，欢迎更新</string>
+    <string name="update_find_new_version">发现新版本</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_next_time">下次再说</string>
+    <string name="update_apply_storage_rights">申请存储权限</string>
+    <string name="update_tips">提示</string>
+    <string name="update_not_wifi_tips">当前处于非WIFI连接，是否继续？</string>
+    <string name="update_no_sd_card">没有挂载的SD卡</string>
+    <string name="update_download_url_empty">下载地址为空</string>
+    <string name="update_file_create_fail">apk文件创建失败</string>
+    <string name="update_download_fail">下载失败</string>
+    <string name="update_network_error_download_fail">校验失败</string>
+    <string name="update_version_download_complete">版本下载完成</string>
+    <string name="update_updating">正在更新</string>
+    <string name="update_progress">正在下载%1$s</string>
+
+
+</resources>

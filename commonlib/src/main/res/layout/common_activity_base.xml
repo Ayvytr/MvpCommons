@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+    <com.cv.toolbar.MyToolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        app:toolbarLeftBtnTextColor="@color/color_text_blue"
+        app:toolbarLeftBtnTextSize="@dimen/font_size_16"
+        app:toolbarRightBtnTextColor="@color/color_text_blue"
+        app:toolbarRightBtnTextSize="@dimen/font_size_16"
+        app:toolbarTitleColor="@color/color_text_main"
+        app:toolbarTitleSize="@dimen/font_size_16"
+        app:toolbarTitleTextStyle="bold" />
+
+
+</RelativeLayout>

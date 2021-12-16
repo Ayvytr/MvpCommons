@@ -1,0 +1,63 @@
+apply from: "${rootProject.rootDir}/project_config.gradle"
+def isLib = rootProject.ext.isComponentLib
+//def isLib = false
+if (isLib) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            if (!isLib) {
+                manifest.srcFile 'src/demo/AndroidManifest.xml'
+                // 合并 demo和main中的res
+                res.srcDirs = ['src/demo/res', 'src/main/res']
+                java.srcDirs = ['src/demo/java', 'src/main/java']
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                res.srcDirs = ['src/main/res']
+                java {
+                    //排除java/demo文件夹下的所有文件
+                    exclude 'src/demo/**'
+                }
+
+                resources {
+                    exclude 'src/demo/*'
+                }
+            }
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependencies["appcompat"]
+    implementation rootProject.ext.dependencies["zxing"]
+    implementation rootProject.ext.dependencies["permission"]
+
+    testImplementation 'junit:junit:4.12'
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="album_folder_padding" >10dp</dimen>
+    <dimen name="album_folder_cover_size">72dp</dimen>
+    <dimen name="album_image_size" >120dp</dimen>
+    <dimen name="album_space_size" >2dp</dimen>
+    <dimen name="album_action_text_size" >16sp</dimen>
+</resources>
